@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@300;600&display=swap');
+
+
+.BoxLogin {
+
+    background-position: center;
+    background: white;
+    border-radius: 20px;
+    padding: 50px;
+    padding-top: 50px;
+    border-top: 200px;
+    padding-left: 50px;
+    margin-left: 430px;
+    margin-right: 430px;
+    margin-top: 60px;
+    box-shadow: 10px 4px 23px -6px rgba(0, 0, 0, 0.25);
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+h1 {
+    
+    margin-bottom: 5px;
+    font-size: 16pt;
+    font-family: 'Poppins', sans-serif;
+}
+
+p#text { 
+    
+    font-size: 11pt;
+    margin-bottom: 30px;
+    margin-top: auto;
+}
+
+p#textsecund {
+
+    font-size: 9pt;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #020659;
+    
+    
+
+}
+
+img {
+
+    background-position: center;
+    height: 90px;
+    right: 90px;
+    margin-bottom: -110px;
+
+}
+
+input#email {
+
+    height: 40px;
+    width: 300px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 5px;
+
+    background-image: url("https://cdn-icons-png.flaticon.com/512/561/561127.png");
+    /* Vector (não utilizado pelo figma/ tentar saber como tirar url dos icon que estão lá) */
+    background-repeat: no-repeat;
+    background-size: 1.3em;
+    background-position-x: 11px;
+    background-position-y: 11px;
+    
+}
+
+input#password {
+
+    height: 40px;
+    width: 300px;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 5px;
+    
+
+    background-image: url("https://findicons.com/files/icons/2770/ios_7_icons/512/password.png");
+    /* Vector */
+    background-repeat: no-repeat;
+    background-size: 1.3em;
+    background-position-x: 11px;
+    background-position-y: 11px;
+}
+
+::placeholder {
+    font-family: 'Poppins', sans-serif;
+    padding-left: 40px;
+    font-family: 'Inter', sans-serif;
+    color: #7C7C7C;
+}
+
+.line {
+    height: 10px;
+    width: 10px;
+}
+
+.SignIn {
+    height: 30px;
+    width: 310px;
+    margin-top: 40px;
+    background-color: #020659; 
+    color: white;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
+
+  
