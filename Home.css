@@ -34,8 +34,7 @@ p#text {
     margin-top: auto;
 }
 
-
-a {
+:link {
 
     font-size: 9pt;
     line-height: 24px;
@@ -43,6 +42,7 @@ a {
     color: #020659;
     
     
+
 }
 
 img {
@@ -99,7 +99,7 @@ input#password {
 
 
 
-button {
+.SignIn {
     height: 30px;
     width: 310px;
     margin-top: 40px;
@@ -110,6 +110,3 @@ button {
     font-weight: bold;
    
   }
-
-
-  

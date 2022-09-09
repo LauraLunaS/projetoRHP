@@ -1,15 +1,16 @@
-import logo from './logo.svg'
-import email from './email.svg'
-import password from './password.svg'
+import  'react-router-dom'
+import logo from './image/logo.svg';
 import './App.css';
-import './BoxLogin.css';
-
+import './BoxLogin.css'
+import Button from './Button'
+import './index'
 
 function App() {
+
   return (
     <div className="App">
-
-      <div className="NavBar"></div>
+        
+        <div className="NavBar"></div>
 
         <img src={logo}></img>
 
@@ -27,12 +28,13 @@ function App() {
 
             <br></br>
 
-          <button className="SignIn">Sign In</button>
+            < Button />
 
-          <p id="textsecund">Forget your password? Click here</p>
+            <a href=''>Forget your password? Click Here</a>
+          
+          
           </div>
-        
-
+ 
     
     </div>
   );

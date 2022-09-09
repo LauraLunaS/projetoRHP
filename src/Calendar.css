@@ -1,0 +1,14 @@
+body {
+    background-color: #f2f2f2;
+}
+img {
+
+    height: 40px;
+    margin: auto;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+hr {
+    background-color: #dfdfdf;
+}
