@@ -1,42 +1,52 @@
+import { useState } from "react";
 import  'react-router-dom'
 import logo from './image/logo.svg';
 import './App.css';
 import './BoxLogin.css'
 import Button from './Button'
 import './index'
+import './Calendar'
+import { Input } from 'reactstrap';
+import { Link } from "react-router-dom";
 
-function App() {
+function App() { 
+
 
   return (
+  
     <div className="App">
         
         <div className="NavBar"></div>
 
-        <img src={logo}></img>
+          <img src={logo} className="Logo" align="center"></img>
 
-      <div className="BoxLogin">
+            <div className="BoxLogin" align="center">
        
-          <h1>Bem Vindo de volta</h1>
-          <p id="text">Insira seu email e senha</p>
+              <h1>Welcome to back</h1>
+              <p id="text">Insert your email and password</p>
         
         
-          <input  placeholder="Email" id="email" ></input>
+              <input  placeholder="Email" id="email" 
+  
+              ></input>
 
-            <br></br>
+                <br></br>
 
-          <input placeholder="Password" id="password" ></input>
+              <input placeholder="Password" id="password" ></input>
 
-            <br></br>
+              <br></br>
 
-            < Button />
+              
+              < Button />
 
-            <a href=''>Forget your password? Click Here</a>
+              <br></br>
+
+              <a href=''>Forget your password? Click Here</a>
           
-          
-          </div>
+        </div>
  
-    
-    </div>
+      
+      </div>
   );
 }
 

@@ -2,34 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@300;600&display=swap');
 
-
-.BoxLogin {
-
-    background-position: center;
-    background: white;
-    border-radius: 20px;
-    padding: 50px;
-    padding-top: 50px;
-    border-top: 200px;
-    padding-left: 50px;
-    margin-left: 430px;
-    margin-right: 430px;
-    margin-top: 60px;
+.App {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+  }
+  
+  .BoxLogin {
+    height: 70%;
+    width: 40%;
+    border-radius: 2vh;
     box-shadow: 10px 4px 23px -6px rgba(0, 0, 0, 0.25);
-    font-family: 'Poppins', sans-serif;
-    
-}
+    background: #ffffff;
+  }
+
 
 h1 {
-    
-    margin-bottom: 5px;
+    margin-top: 40px;
+    margin-bottom: -2px;
     font-size: 16pt;
     font-family: 'Poppins', sans-serif;
 }
 
 p#text { 
-    
-    font-size: 11pt;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10pt;
     margin-bottom: 30px;
     margin-top: auto;
 }
@@ -37,7 +37,7 @@ p#text {
 
 a {
 
-    font-size: 9pt;
+    font-size: 10pt;
     line-height: 24px;
     text-decoration-line: underline;
     color: #020659;
@@ -45,19 +45,11 @@ a {
     
 }
 
-img {
-
-    background-position: center;
-    height: 90px;
-    right: 90px;
-    margin-bottom: -110px;
-
-}
 
 input#email {
 
-    height: 40px;
-    width: 300px;
+    height: 10%;
+    width: 60%;
     margin-bottom: 30px;
     margin-top: 10px;
     border: 1px solid #000000;
@@ -75,8 +67,8 @@ input#email {
 
 input#password {
 
-    height: 40px;
-    width: 300px;
+    height: 10%;
+    width: 60%;
     border: 1px solid #000000;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 5px;
@@ -88,6 +80,7 @@ input#password {
     background-size: 1.3em;
     background-position-x: 11px;
     background-position-y: 11px;
+    
 }
 
 ::placeholder {
@@ -100,8 +93,8 @@ input#password {
 
 
 button {
-    height: 30px;
-    width: 310px;
+    height: 10%;
+    width: 70%;
     margin-top: 40px;
     background-color: #020659; 
     color: white;
@@ -110,6 +103,25 @@ button {
     font-weight: bold;
    
   }
+
+.Logo {
+
+    height: 70px;
+    width: 70px;
+    position: fixed;
+    top: 50px;
+    
+    
+    
+}
+
+.NavBar {
+    background-color: #020659;
+    position: fixed;
+    top: 0;
+    height: 5%;
+    width: 100%;
+}
 
 
   
