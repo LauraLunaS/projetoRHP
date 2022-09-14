@@ -1,5 +1,5 @@
 body {
-    background-color: #f2f2f2;
+    background-color: #ff7474;
 }
 
 img.Logosecund {
@@ -9,7 +9,7 @@ img.Logosecund {
     padding-top: 10px;
 }
 
-hr {
+hr.line {
     border: 1px solid #d5d5d5;
     transform: rotate(-0.16deg);
     background-color: #d5d5d5;
