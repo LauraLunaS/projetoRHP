@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+
 body {
-    background-color: #ff7474;
+    background-color: #f2f2f2;
 }
 
 img.Logosecund {
@@ -15,5 +19,46 @@ hr.line {
     background-color: #d5d5d5;
 }
 
+.Calendario {
+
+
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 30%;
+    height: 45%;
+    background-position: center;
+    text-align: center;
+    
+    background: white;
+    box-shadow: 8px 4px 32px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+}
+
+.date {
+    margin-top: 20px;
+    width: 50%;
+    height: 15%;
+    font-family: 'Poppins';
+}
+
+.Add {
+    width: 65%;
+    height: 15%;
+    border-radius: 18px;
+}
+
+p {
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+a {
+
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #047000;
+    
+}
 
 

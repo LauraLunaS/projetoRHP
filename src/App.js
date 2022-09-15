@@ -8,6 +8,8 @@ import './index'
 import './Calendar'
 import { Input } from 'reactstrap';
 import { Link } from "react-router-dom";
+import InputEmail from "./Login/InputEmail";
+import InputPassword from "./Login/InputPassword";
 
 
 function App() { 
@@ -25,15 +27,11 @@ function App() {
        
               <h1>Welcome to back</h1>
               <p id="text">Insert your email and password</p>
-        
-        
-              <input  placeholder="Email" id="email" 
-  
-              ></input>
+    
 
-                <br></br>
+              < InputEmail />
 
-              <input placeholder="Password" id="password" ></input>
+              < InputPassword />
 
               <br></br>
 

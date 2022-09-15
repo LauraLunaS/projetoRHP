@@ -12,7 +12,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="/calendar" element={<Calendar />} />
+      <Route path="/Calendar" element={<Calendar />} />
     </Routes>
   </BrowserRouter>
 );
