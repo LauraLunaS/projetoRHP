@@ -5,6 +5,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Calendar from './Calendar';
+import Additen from './Additens';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,6 +14,7 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/Calendar" element={<Calendar />} />
+      <Route path="/Additen" element={<Additen />} />
     </Routes>
   </BrowserRouter>
 );

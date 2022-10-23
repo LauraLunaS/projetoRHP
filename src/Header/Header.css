@@ -1,0 +1,11 @@
+img.Logosecund {
+    height: 40px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+hr.line {
+    border: 1px solid #d5d5d5;
+    transform: rotate(-0.16deg);
+    background-color: #d5d5d5;
+}

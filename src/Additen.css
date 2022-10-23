@@ -1,0 +1,61 @@
+
+body {
+    background-color: #f2f2f2;
+}
+
+img.Logosecund {
+
+    height: 40px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+hr.line {
+    border: 1px solid #d5d5d5;
+    transform: rotate(-0.16deg);
+    background-color: #d5d5d5;
+}
+
+.containeritens {
+    background-color: white;
+    width: 400px;
+    height: 450px;
+    float: right;
+    border-radius: 20px;
+    margin-right: 20%;
+    margin-top: 5%;
+}
+
+.Calendario {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 30%;
+    height: 45%;
+    background-position: center;
+    text-align: center;
+    
+    background: white;
+    box-shadow: 8px 4px 32px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+}
+
+
+button#adcitem {
+    background-color: #047000;
+    border: none;
+    width: 130px;
+    border-radius: 30px;
+    height: 40px;
+    margin-left: 5%;
+}
+
+button#canitem {
+    background-color: brown;
+    border: none;
+    width: 130px;
+    height: 40px;
+    border-radius: 30px;
+    float: right;
+    margin-right: 5%;
+}

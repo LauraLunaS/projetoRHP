@@ -32,6 +32,7 @@ p#text {
     font-size: 10pt;
     margin-bottom: 30px;
     margin-top: auto;
+    font-weight: lighter;
 }
 
 
@@ -123,5 +124,16 @@ button {
     width: 100%;
 }
 
+.SignIn {
+    height: 8%;
+    width: 61%;
+    margin-top: 50px;
+    background-color: #020659; 
+    color: white;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5%;
+  }
+  
 
   
