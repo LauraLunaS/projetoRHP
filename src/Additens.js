@@ -1,15 +1,12 @@
-import './Additen.css';
-import logoHeader from './image/logoHeader.svg'
-import add from './image/add.svg'
-import './Additen.css'
+import './Additens.css';
+import Header from './Header/Header';
+import add from './image/add.svg';
 
-
-function Additen () {
+function Additens () {
     return (
 
         <>
-        <img src={logoHeader}  className="Logosecund"></img>
-        <hr className='line'></hr>
+        <Header />
 
         <div className='Calendario'>
 
@@ -26,7 +23,7 @@ function Additen () {
         </div>
         
         <div className='containeritens'>
-        <img src={add} id='add'></img>
+        <img src={add} id='add' alt=''></img>
 
             <p id='addp'>Adicionar itens para a reunião</p>
 
@@ -56,4 +53,5 @@ function Additen () {
     )
 
 }
-export default Additen;
+
+export default Additens;

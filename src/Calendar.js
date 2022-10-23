@@ -1,4 +1,4 @@
-import Header from './Header/Header'
+import Header from './Header/Header';
 import './Calendar.css'
 import add from './image/add.svg'
 import addtwo from './image/addtwo.svg'
@@ -42,7 +42,7 @@ function cancelar() {
 
             <div className='add'>
 
-                <img src={add} id='add'></img>
+                <img src={add} id='add' alt='add'></img>
 
                 <p id='addp'>Adicionar nova reunião</p>
 
@@ -64,7 +64,7 @@ function cancelar() {
 
                 <br></br>
 
-                <img src={addtwo} id='more'></img>
+                <img src={addtwo} id='more' alt=''></img>
                 <Link to='/Additen'>
                     <a href='./Additens' className='a'>Adicionar itens para reunião</a>
                  </Link>
@@ -85,6 +85,3 @@ function cancelar() {
     
 };
 export default Calendar;
-    
- 
-  
