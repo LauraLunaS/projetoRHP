@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@300;600&display=swap");
+
+.background {
+  background-image: url('https://revistasegurancaeletronica.com.br/wp-content/uploads/2021/01/real-hospital-portugues-de-beneficencia-em-pernambuco.jpg');
+  background-repeat: no repeat;
+  background-position: center center;
+  background-size: cover;
+  
+  height: 100vh;
+}
+
+.user-login {
+  background-position: center;
+  position: absolute;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  background-color: white;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 10%;
+  border-radius: 5px 5px 20px 20px;
+  
+}
+
+.user-login__title {
+  font-family: "Poppins";
+  font-size: 30px;
+  color: black;
+  margin-bottom: -5%;
+  text-align: center;
+}
+
+.user-login__subtitle {
+  font-weight: normal;
+  font-size: 12pt;
+  text-align: center;
+  margin-bottom: 9%;
+}
+
+.user-login__form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.user-login__form-control label {
+  margin-bottom: 5px;
+  color: black;
+  font-weight: normal;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.user-login__form-control input {
+  background-color: white;
+  border-radius: 4px;
+  border: 1.3px solid #ffffff;
+  height: 36px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-color: #020659;
+}
+
+.user-login__form-control input:focus {
+  outline: 0;
+  border-color: #5988df;
+}
+
+.user-login__submit-button {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.user-login__error {
+  color: red;
+}
+
+.Logo {
+  height: 70px;
+  width: 70px;
+  margin-top: -6%;
+  margin-left: 40%;
+  margin-bottom: -5%;
+}
+
+.NavBar {
+  background-color: #020659;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 35px;
+}
