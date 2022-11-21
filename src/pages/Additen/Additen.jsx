@@ -44,8 +44,9 @@ const Additen = () => {
         <label className="label">Quantidade de pessoas</label>
         <br></br>
         <input type="number" className="input"></input>
-
         <br></br>
+        
+
 
         <img src={addtwo} id="more"></img>
         <Link to="/Additen">

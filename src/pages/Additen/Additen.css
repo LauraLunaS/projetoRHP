@@ -127,20 +127,28 @@ p#addp {
     margin-bottom: 5%;
 }
 
-.btnadd {
+.btnadd  {
     color: #ffffff;
-    background-color: #047000;
+    background-color: #55af58;
     border: none;
     width: 120px;
     border-radius: 30px;
     height: 33px;
     margin-left: 5%;
     margin-top: 7%;
+    
 }
-
+.btnadd:hover {
+    background-color: #047000;
+ 
+}
+ .btnadd:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
 .btncan {
     color: #ffffff;
-    background-color: brown;
+    background-color: rgb(183, 72, 72);
     border: none;
     width: 120px;
     height: 33px;
@@ -148,6 +156,11 @@ p#addp {
     float: right;
     margin-right: 5%;
     margin-top: 7%;
+    
+}
+.btncan:hover {
+    background-color:  rgb(240, 14, 14);;
+    
 }
 
 .Add {
@@ -160,6 +173,8 @@ p#addp {
     margin-left: 20%;
     border-radius: 20px;
     margin-bottom: 5%;
+    
+   
 }
 
 .p {
@@ -169,4 +184,8 @@ p#addp {
 .btnSair {
     margin-top: -27%;
     margin-left: 70%;
+}
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }

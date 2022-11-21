@@ -86,6 +86,7 @@ const UserLogin = () => {
           <div className="user-login__error">{error}</div>
         )}
         <UIButton
+       // disabled="true"
           type="submit"
           theme="contained-green"
           className="user-login__submit-button"

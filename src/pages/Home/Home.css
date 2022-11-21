@@ -149,6 +149,7 @@ p#addp {
 }
 
 .Add {
+  display: inline-block;
   background-color:#020659;
   color: white;
   border: none;
@@ -158,6 +159,8 @@ p#addp {
   margin-left: 20%;
   border-radius: 20px;
   margin-bottom: 5%;
+
+  
 }
 
 .p {

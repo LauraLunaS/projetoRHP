@@ -25,6 +25,10 @@
   background-color: #020659;
   border: 2px solid;
 }
+.ui-button--bordered-green:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
 
 .ui-button--bordered-green:hover {
   background-color: #1DD1A1;
@@ -40,7 +44,13 @@
 }
 
 .ui-button--contained-green:hover {
+  transform: scale(0.9);
+  transition: all 0.4s;
   background-color: #00b894;
   border-color: #00b894;
   color: #fff;
+}
+.ui-button--contained-green:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
