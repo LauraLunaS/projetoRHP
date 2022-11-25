@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 import StoreContext from 'components/Store/Context';
 import UIButton from 'components/UI/Button/Button';
-
+import { Link } from 'react-router-dom';
 import logo from 'image/logo.svg';
 
 import './Login.css';
@@ -81,6 +81,9 @@ const UserLogin = () => {
             onChange={onChange}
             value={values.password}
           />
+          <Link to="./Cadastro">
+            <a>Cadastrar</a>
+          </Link>
         </div>
         {error && (
           <div className="user-login__error">{error}</div>

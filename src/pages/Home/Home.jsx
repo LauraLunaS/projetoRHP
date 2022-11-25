@@ -121,12 +121,7 @@ const ano = data.getFullYear();
         <a>Essa data está disponível</a>
         <br></br>
       
-        <input type="date" className="date" value={reuniao.moment} onChange={aoDigitar} name='moment' min={SubDate()}  ></input>
         
-       
-        <br></br>
-        <a>Essa data está disponível</a>
-        <br></br>
         <button className="Add" onClick={handleClickData} onAuxClick={limparFormulario} value='Cadastrar'>Criar uma nova reunião</button>
       </div>)
          }
