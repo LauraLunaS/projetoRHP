@@ -4,7 +4,7 @@ import StoreContext from "components/Store/Context";
 import UIButton from "components/UI/Button/Button";
 import { Link } from "react-router-dom";
 import logo from "image/logo.svg";
-import "./Login.css";
+import "./Cadastro.css";
 
 function initialState() {
   return { user: "", password: "" };
@@ -17,7 +17,7 @@ function login({ user, password }) {
   return { error: "Usuário ou senha inválido" };
 }
 
-const UserLogin = () => {
+const Cadastro = () => {
   const [values, setValues] = useState(initialState);
   const [error, setError] = useState(null);
   const { setToken } = useContext(StoreContext);
@@ -95,6 +95,6 @@ const UserLogin = () => {
       </div>
     </div>
   );
-};
+}
 
-export default UserLogin;
+export default Cadastro;
