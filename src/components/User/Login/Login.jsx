@@ -78,7 +78,7 @@ const UserLogin = () => {
               value={values.password}
             />
             <Link to="/cadastro">
-              <a href="/">Cadastrar-se</a>
+              <a href="/" className="cadastro">Cadastre-se</a>
             </Link>
           </div>
           {error && <div className="user-login__error">{error}</div>}

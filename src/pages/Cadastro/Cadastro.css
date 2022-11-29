@@ -23,7 +23,7 @@
   margin: 0 auto;
   margin-top: 10%;
   border-radius: 5px 5px 20px 20px;
-  
+  margin-left: 30%;
 }
 
 .user-login__title {
@@ -43,6 +43,7 @@
 
 .user-login__form-control {
   display: flex;
+  background-position: center;
   flex-direction: column;
   margin-bottom: 10px;
 }

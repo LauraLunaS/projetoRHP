@@ -56,10 +56,10 @@ const Cadastro = () => {
         </div>
 
         <h1 className="user-login__title">Welcome To Back</h1>
-        <h2 className="user-login__subtitle">Insira seu usuário e senha</h2>
+        <h2 className="user-login__subtitle">Insira seu email e senha</h2>
         <form onSubmit={onSubmit}>
           <div className="user-login__form-control">
-            <label htmlFor="user">Usuário</label>
+            <label htmlFor="user">Email</label>
             <input
               id="user"
               type="text"
@@ -77,9 +77,7 @@ const Cadastro = () => {
               onChange={onChange}
               value={values.password}
             />
-            <Link to="/cadastro">
-              <a href="/">Cadastrar-se</a>
-            </Link>
+            
           </div>
           {error && <div className="user-login__error">{error}</div>}
           <UIButton
