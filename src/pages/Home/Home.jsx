@@ -15,7 +15,7 @@ const PagesHome = () => {
     const mes = String(data.getMonth() + 1).padStart(2, "0");
     const ano = data.getFullYear();
     return ano + "-" + mes + "-" + dia;
-    //console.log(dataAtual);
+   
   };
 
   const Modeloreuniao = {
@@ -28,31 +28,19 @@ const PagesHome = () => {
   };
   const [reuniao, setReuniao] = useState([]);
   const [objReuniao, setObjReuniao] = useState(Modeloreuniao);
-  //const[buttondisabled,setbuttondisabled]= useState();
-
-  const [MostrarDiv, setMostrarDiv] = useState(false);
   const [EsconderDiv, setEsconderDiv] = useState(true);
-  //const[buttondisabled,setbuttondisabled]= useState();
+  
 
   const handleClickData = () => {
     setEsconderDiv(false);
-    setMostrarDiv(true);
+    alert(" Data Marcada com Sucesso , Adicione agora as informações da Reuniao !")
   };
 
   const aoDigitar = (e) => {
-    /*
-    if(console.log(e.target.value.trim().lenght!=0)){  // true
-
-      setbuttondisabled(" ");
-
-      
-    
-    }
-    else{*/
-    //setbuttondisabled();
+   
     console.log(e.target);
     setObjReuniao({ ...objReuniao, [e.target.name]: e.target.value });
-    //}
+    
   };
 
   const Cadastrar = () => {
@@ -61,15 +49,26 @@ const PagesHome = () => {
       body: JSON.stringify(objReuniao),
       headers: {
         "Content-type": "application/json",
-        Accept: "application/json",
+        'Accept': "application/json",
       },
     })
-      .then((retorno) => retorno.json())
-      .then((retorno_convertido) => {
+      
+    .then(retorno => retorno.json())
+    .then(retorno_convertido => {
+
+      if (retorno_convertido.mensagem !== undefined) {
+        alert(retorno_convertido.mensagem)
+      } else {
+
         setReuniao([...reuniao, retorno_convertido]);
-        alert("Reuniao cadastrada com sucesso!");
-        limparFormulario();
-      });
+        alert('Reuniao cadastrada com sucesso! ,  IdReuniao = '+ retorno_convertido.idReuniao)
+        limparFormulario()
+
+      }
+      
+
+    })
+
   };
 
   const limparFormulario = () => {
@@ -81,7 +80,7 @@ const PagesHome = () => {
       <img src={logoHeader} className="Logosecund" alt=""></img>
       <hr className="line"></hr>
 
-      {EsconderDiv && (
+      
         <div className="Calendario">
           <p>Adicione a data de preferência</p>
           <input
@@ -106,7 +105,7 @@ const PagesHome = () => {
             Criar uma nova reunião
           </button>
         </div>
-      )}
+      
 
       <div className="add">
         <img src={add} id="add" alt=""></img>
@@ -166,7 +165,7 @@ const PagesHome = () => {
         </Link>
 
         <button
-          /* disabled={buttondisabled}*/ type="button"
+         type="button"
           className="btnadd"
           onClick={Cadastrar}
           onAuxClick={limparFormulario}
@@ -187,8 +186,24 @@ const PagesHome = () => {
       <button className="btnSair" type="button" onClick={() => setToken(null)}>
         Sair
       </button>
+      <Link to={"/AdmTabela"} ><button  type="button" class="btnlink">Gerenciar Reuniões</button></Link>
     </div>
   );
 };
 
 export default PagesHome;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

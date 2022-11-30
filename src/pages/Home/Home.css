@@ -36,6 +36,11 @@ hr.line {
   left: 25%;
   position: absolute;
 }
+.btnlink{
+  top: 90.22%;
+  left: 88%;
+  position: absolute;
+}
 .date {
   margin-top: 20px;
   width: 50%;
@@ -63,7 +68,7 @@ a {
 .add {
   background-color: white;
   width: 400px;
-  height: 460px;
+  height: 494px;
   float: right;
   border-radius: 20px;
   margin-right: 20%;
