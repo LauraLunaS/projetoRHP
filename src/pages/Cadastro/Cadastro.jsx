@@ -55,8 +55,8 @@ const Cadastro = () => {
           <img src={logo} className="Logo" align="center" alt=""></img>
         </div>
 
-        <h1 className="user-login__title">Welcome To Back</h1>
-        <h2 className="user-login__subtitle">Insira seu email e senha</h2>
+        <h1 className="user-login__title">Cadastro</h1>
+        <h2 className="user-login__subtitle">Cadastre-se para Marcar Reuniões.</h2>
         <form onSubmit={onSubmit}>
           <div className="user-login__form-control">
             <label htmlFor="user">Email</label>
@@ -81,7 +81,6 @@ const Cadastro = () => {
           </div>
           {error && <div className="user-login__error">{error}</div>}
           <UIButton
-            // disabled="true"
             type="submit"
             theme="contained-green"
             className="user-login__submit-button"
