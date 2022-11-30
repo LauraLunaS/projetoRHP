@@ -79,6 +79,7 @@ a {
     margin-top: 5%;
 }
 
+
 .input {
     border: none;
     border-bottom: 1.5px solid black;
@@ -146,9 +147,13 @@ p#addp {
     
 }
 .btnadd:hover {
-    background-color: #047000;
- 
-}
+    background-color: #16e50e;
+    
+  }
+  
+  
+  
+
  .btnadd:disabled {
     opacity: 0.6;
     cursor: not-allowed;

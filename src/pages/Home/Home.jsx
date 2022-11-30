@@ -102,7 +102,7 @@ const PagesHome = () => {
             onAuxClick={limparFormulario}
             value="Cadastrar"
           >
-            Criar uma nova reunião
+            Agendar Data
           </button>
         </div>
       
