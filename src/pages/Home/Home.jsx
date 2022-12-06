@@ -6,6 +6,8 @@ import logoHeader from "image/logoHeader.svg";
 import add from "image/add.svg";
 import addtwo from "image/addtwo.svg";
 
+
+
 const PagesHome = () => {
   const { setToken } = useContext(StoreContext);
 
@@ -18,13 +20,29 @@ const PagesHome = () => {
    
   };
 
+/*
+  "data": "12/08/2000",
+        "local": "reuniaoteste",
+        "quantidade": 4,
+        "nome":"eu",
+        "emal":"yurikk",
+        "horarioInicio": "19:55",
+        "horarioFinal": "16:00",
+        "criadorDoEvento":"Yuri"
+        "inscritos":" "
+       */
+
   const Modeloreuniao = {
-    idReuniao: 0,
-    nomereuniao: "",
-    moment: "",
-    inicio_reuniao: "",
-    termino_reuniao: "",
-    q_pessoas: "",
+    id: 0,
+    nome: "",
+    data: "",
+    local:" ",
+   horarioInicio: "",
+    horarioFinal: "",
+    quantidade: "",
+    email:"",
+    criadorDoEvento:"",
+    
   };
   const [reuniao, setReuniao] = useState([]);
   const [objReuniao, setObjReuniao] = useState(Modeloreuniao);
@@ -44,7 +62,7 @@ const PagesHome = () => {
   };
 
   const Cadastrar = () => {
-    fetch("http://localhost:8080/reuniao/cadastrar", {
+    fetch("http://localhost:8080/evento/cadastrar", {
       method: "post",
       body: JSON.stringify(objReuniao),
       headers: {
@@ -55,28 +73,33 @@ const PagesHome = () => {
       
     .then(retorno => retorno.json())
     .then(retorno_convertido => {
-
+        
       if (retorno_convertido.mensagem !== undefined) {
         alert(retorno_convertido.mensagem)
-      } else {
+     } else {
 
         setReuniao([...reuniao, retorno_convertido]);
-        alert('Reuniao cadastrada com sucesso! ,  IdReuniao = '+ retorno_convertido.idReuniao)
+        alert  ('Reuniao cadastrada com sucesso! ,  IdReuniao = '+ retorno_convertido.id)
+       
         limparFormulario()
 
       }
       
 
-    })
+  })
 
   };
+
 
   const limparFormulario = () => {
     setObjReuniao(Modeloreuniao);
   };
 
   return (
+
+    
     <div className="pages-home">
+
       <img src={logoHeader} className="Logosecund" alt=""></img>
       <hr className="line"></hr>
 
@@ -86,9 +109,9 @@ const PagesHome = () => {
           <input
             type="date"
             className="date"
-            value={reuniao.moment}
+            value={reuniao.data}
             onChange={aoDigitar}
-            name="moment"
+            name="data"
             min={SubDate()}
           ></input>
 
@@ -116,30 +139,30 @@ const PagesHome = () => {
         <input
           type="time"
           className="time"
-          value={reuniao.inicio_reuniao}
+          value={reuniao.horarioInicio}
           onChange={aoDigitar}
-          name="inicio_reuniao"
+          name="horarioInicio"
         ></input>
 
         <p className="label">Término da reunião</p>
         <input
           type="time"
           className="time"
-          value={reuniao.termino_reuniao}
+          value={reuniao.horarioFinal}
           onChange={aoDigitar}
-          name="termino_reuniao"
+          name="horarioFinal"
         ></input>
 
         <br></br>
 
-        <label className="label">Nome da reunião</label>
+        <label className="label">Nome da Sala</label>
         <br></br>
         <input
           type="text"
           className="input"
-          value={reuniao.nomereuniao}
+          value={reuniao.local}
           onChange={aoDigitar}
-          name="nomereuniao"
+          name="local"
         ></input>
 
         <br></br>
@@ -149,16 +172,16 @@ const PagesHome = () => {
         <input
           type="number"
           className="input"
-          value={reuniao.q_pessoas}
+          value={reuniao.quantidade}
           onChange={aoDigitar}
           min="2"
-          name="q_pessoas"
+          name="quantidade"
         ></input>
 
         <br></br>
 
         <img src={addtwo} id="more" alt=""></img>
-        <Link to="/Additen">
+        <Link to="">
           <a href="./Additens" className="a">
             Adicionar itens para reunião
           </a>

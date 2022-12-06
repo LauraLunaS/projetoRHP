@@ -2,10 +2,7 @@ import './adm.css';
 import React, { useState,useEffect } from "react";
 import Formulario from "./formulario";
 import TT from './tabela'
-import { Link } from "react-router-dom";
-import logoHeader from "image/logoHeader.svg";
-import add from "image/add.svg";
-import addtwo from "image/addtwo.svg";
+
 
 
 ////// HOME.JS ////////// 
@@ -14,12 +11,16 @@ import addtwo from "image/addtwo.svg";
 function App() {
 
   const Modeloreuniao = {
-    idReuniao: 0,
-    nomereuniao: '',
-    moment: '',
-    inicio_reuniao: '',
-    termino_reuniao: '',
-    q_pessoas: '',
+    id: 0,
+    nome: "",
+    data: "",
+    local:"",
+   horarioInicio: "",
+    horarioFinal: "",
+    quantidade: "",
+    email:"",
+    criadorDoEvento:""
+    
   
   }
   
@@ -31,7 +32,7 @@ function App() {
   //UseEffect
 
   useEffect(() => {
-    fetch("http://localhost:8080/reuniao/listar")
+    fetch("http://localhost:8080/evento/listar")
       .then(retorno => retorno.json())
       .then(retorno_convertido => setReuniao(retorno_convertido));
   }, [])
@@ -54,7 +55,7 @@ function App() {
 
  //Alterar Produto
   const ALTERAR = () => {
-    fetch('http://localhost:8080/reuniao/alterar', {
+    fetch('http://localhost:8080/evento/alterar', {
       method: 'put',
       body: JSON.stringify(objReuniao),
       headers: {
@@ -72,7 +73,7 @@ function App() {
           //setProdutos([...reuniao,retorno_convertido]);
 
           //Mensagem
-          alert('Reuniao cadastrada com sucesso! IdReuniao = '+objReuniao.idReuniao)
+          alert('Reuniao cadastrada com sucesso! IdReuniao = '+objReuniao.id)
 
           // Cópia do vetor de produtos
 
@@ -80,7 +81,7 @@ function App() {
 
           // Ìndice
           let indice = vetorTemp.findIndex((p) => {
-            return p.codigo === objReuniao.idReuniao;
+            return p.codigo === objReuniao.id;
             // retorna a posição de alguma verificação.
             // posição que foi removida do vetor.
           });
@@ -102,7 +103,7 @@ function App() {
 
   //Remover Produto
   const remover = () => {
-    fetch('http://localhost:8080/reuniao/remover/' + objReuniao.idReuniao, {
+    fetch('http://localhost:8080/evento/remover/' + objReuniao.id, {
       method: 'delete',
 
       headers: {
@@ -122,7 +123,7 @@ function App() {
 
         // Ìndice
         let indice = vetorTemp.findIndex((p) => {
-          return p.codigo === objReuniao.idReuniao;
+          return p.codigo === objReuniao.id;
           // retorna a posição de alguma verificação.
           // posição que foi removida do vetor.
         });
